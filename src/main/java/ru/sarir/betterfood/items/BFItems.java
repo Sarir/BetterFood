@@ -16,7 +16,7 @@ public class BFItems {
 	public static BFItemKnife knife;
 	
 	public static void initItems() {
-		sunflowerSeeds = registerFood("sunflowerSeeds", 1, 0.1f, false);
+		sunflowerSeeds = new FoodSunflowerSeeds("sunflowerSeeds", 1, 0.8f, false);
 		burger = new Burger();
 		
 		sunflowerOil = registerItem("sunflowerOil");

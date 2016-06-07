@@ -4,6 +4,7 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.common.MinecraftForge;
+import ru.sarir.betterfood.blocks.BFBlocks;
 import ru.sarir.betterfood.fluids.BFFluids;
 import ru.sarir.betterfood.handlers.BFCraftingHandler;
 import ru.sarir.betterfood.items.BFItems;
@@ -12,6 +13,7 @@ import ru.sarir.betterfood.recipes.BFRecipes;
 public class CommonProxy {
 	
 	public void preInit(FMLPreInitializationEvent preEvent) {
+		BFBlocks.initBlocks();
 		BFItems.initItems();
 		BFFluids.initFluids();
 		BFRecipes.initRecipes();

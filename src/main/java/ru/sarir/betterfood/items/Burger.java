@@ -12,7 +12,7 @@ public class Burger extends BFItemFood {
 	public final int duration = 15 * 20;
 	
 	public Burger() {
-		super("burger", 19, 0.19f, true);
+		super("burger", 19, 0.1f, true);
 		GameRegistry.registerItem(this, "burger");
 	}
 	

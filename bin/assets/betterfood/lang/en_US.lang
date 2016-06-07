@@ -9,6 +9,7 @@ item.milkPotion.name=Milk in bottle
 
 tile.blockMayo.name=Mayonnaise
 tile.blockSunflowerOil.name=Sunflower Oil
+tile.plantSunflower.name=Sunflower
 
 fluid.tile.blockSunflowerOil=Sunflower Oil
 fluid.tile.blockMayo=Mayonnaise
