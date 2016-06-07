@@ -1,0 +1,12 @@
+package ru.sarir.betterfood;
+
+public class CreativeTab {
+	public SCreativeTab(String label) {
+		super(label);
+	}
+
+	@Override
+	public Item getTabIconItem() {
+		return SItems.amethyst;
+	}
+}

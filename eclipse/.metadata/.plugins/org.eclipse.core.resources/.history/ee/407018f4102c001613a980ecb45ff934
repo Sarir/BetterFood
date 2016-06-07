@@ -1,0 +1,25 @@
+package ru.sarir.betterfood.handlers;
+
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import ic2.core.TextureStitchEvent;
+import ic2.core.init.BlocksItems;
+import ic2.core.init.InternalName;
+import net.minecraft.block.Block;
+import net.minecraftforge.fluids.Fluid;
+
+public class HookTexture {
+	@SubscribeEvent
+	@SideOnly(Side.CLIENT)
+	public void textureHook(TextureStitchEvent.Post event) {
+		if (map.getTextureType() == 0) {
+			for (InternalName name : BlocksItems.getIc2FluidNames()) {
+				Block block = BlocksItems.getFluidBlock(name);
+				Fluid fluid = BlocksItems.getFluid(name);
+
+				fluid.setIcons(block.getBlockTextureFromSide(1), block.getBlockTextureFromSide(2));
+			}
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package ru.sarir.betterfood.fluids;
+
+import net.minecraftforge.fluids.Fluid;
+
+public class BFFluid extends Fluid {
+
+	public BFFluid(String fluidName) {
+		super(fluidName);
+	}
+
+}

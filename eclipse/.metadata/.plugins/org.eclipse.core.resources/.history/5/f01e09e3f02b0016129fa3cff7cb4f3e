@@ -1,0 +1,22 @@
+package ru.sarir.betterfood.proxy;
+
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import ru.sarir.betterfood.items.BFItemRender;
+
+public class ClientProxy extends CommonProxy {
+	public void preInit(FMLPreInitializationEvent preEvent) {
+		super.preInit(preEvent);
+	}
+
+	public void init(FMLInitializationEvent event) {
+		super.init(event);
+		
+		//BFItemRender.registerItemRender();
+	}
+
+	public void postInit(FMLPostInitializationEvent postEvent) {
+		super.postInit(postEvent);
+	}
+}

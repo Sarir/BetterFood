@@ -1,0 +1,5 @@
+package ru.sarir.betterfood.proxy;
+
+public class ClientProxy {
+
+}

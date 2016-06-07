@@ -1,0 +1,7 @@
+package ru.sarir.betterfood.items;
+
+import net.minecraft.item.Item;
+
+public class BFItem extends Item {
+
+}

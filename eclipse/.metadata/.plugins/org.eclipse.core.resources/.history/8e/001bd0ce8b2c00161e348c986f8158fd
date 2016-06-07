@@ -1,0 +1,7 @@
+package ru.sarir.betterfood.fluids;
+
+import net.minecraftforge.fluids.BlockFluidClassic;
+
+public class BFFluidBlock extends BlockFluidClassic {
+
+}

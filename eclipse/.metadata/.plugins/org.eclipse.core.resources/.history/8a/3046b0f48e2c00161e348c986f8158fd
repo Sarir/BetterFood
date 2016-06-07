@@ -1,0 +1,12 @@
+package ru.sarir.betterfood.fluids;
+
+import net.minecraftforge.fluids.Fluid;
+
+public class BFFluid extends Fluid {
+
+	public BFFluid(String fluidName, int density, int luminosity, int temperature, int viscosity, boolean isGaseous) {
+		super(fluidName);
+		this.setViscosity(temperature)
+	}
+
+}

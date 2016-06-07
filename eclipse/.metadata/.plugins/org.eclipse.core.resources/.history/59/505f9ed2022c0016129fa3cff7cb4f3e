@@ -1,0 +1,13 @@
+package ru.sarir.betterfood.fluids.blocks;
+
+import net.minecraft.block.material.Material;
+import net.minecraftforge.fluids.BlockFluidClassic;
+import net.minecraftforge.fluids.Fluid;
+
+public class FluidMayo extends BlockFluidClassic {
+
+	public FluidMayo(Fluid fluid, Material material) {
+		super(fluid, material);
+	}
+
+}

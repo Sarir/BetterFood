@@ -1,0 +1,16 @@
+package ru.sarir.betterfood.items;
+
+import net.minecraft.item.Item;
+import ru.sarir.betterfood.BetterFood;
+
+public class BFItemKnife extends Item {
+	
+	public BFItemKnife() {
+		super();
+		this.setUnlocalizedName("knife");
+		this.maxStackSize = 1;
+		this.setMaxDamage(200);
+		this.setNoRepair();
+		this.setCreativeTab(BetterFood.creativeTab);
+	}
+}

@@ -1,0 +1,13 @@
+package ru.sarir.betterfood.fluids;
+
+import net.minecraft.block.material.Material;
+import net.minecraftforge.fluids.BlockFluidClassic;
+import net.minecraftforge.fluids.Fluid;
+
+public class BFFluidBlock extends BlockFluidClassic {
+
+	public BFFluidBlock(Fluid fluid, Material material) {
+		super(fluid, material);
+	}
+
+}

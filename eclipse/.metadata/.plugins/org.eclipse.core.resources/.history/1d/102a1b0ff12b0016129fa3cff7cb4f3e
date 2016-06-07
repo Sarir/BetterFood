@@ -1,0 +1,16 @@
+package ru.sarir.betterfood.items;
+
+import net.minecraft.item.Item;
+
+public class BFItems {
+
+	public static void initItems() {
+		
+	}
+	
+	private static Item registerItem(String name) {
+		Item item = new BFItem(name);
+		GameRegistry.registerItem(item, name);
+		return item;
+	}
+}

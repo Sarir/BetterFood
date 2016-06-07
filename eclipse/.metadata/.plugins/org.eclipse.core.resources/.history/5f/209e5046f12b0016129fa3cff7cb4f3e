@@ -1,0 +1,18 @@
+package ru.sarir.betterfood.items;
+
+import net.minecraft.item.ItemFood;
+
+public class BFItemFood extends ItemFood {
+
+	public BFItemFood(String unLocalizedName, int amount, float saturation, boolean isWolfFood) {
+		super(amount, saturation, isWolfFood);
+		
+		this.setUnlocalizedName(unLocalizedName);
+		this.setCreativeTab(BetterFood.sCreativeTab);
+		
+		if(FMLCommonHandler.instance().getEffectiveSide().isClient()) {
+			SItemRender.regItem(this);
+		}
+	}
+
+}

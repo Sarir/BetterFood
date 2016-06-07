@@ -1,0 +1,9 @@
+package ru.sarir.betterfood.items;
+
+public class Burger extends BFItemFood {
+
+	public Burger(String unLocalizedName, int amount, float saturation, boolean isWolfFood) {
+		super(unLocalizedName, amount, saturation, isWolfFood);
+	}
+
+}

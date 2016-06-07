@@ -1,0 +1,16 @@
+package ru.sarir.betterfood;
+
+import net.minecraft.init.Items;
+import net.minecraft.item.Item;
+
+public class CreativeTab {
+	public CreativeTab(String label) {
+		super(label);
+	}
+
+	@Override
+	public Item getTabIconItem() {
+		//return BFItems.amethyst;
+		return Items.apple;
+	}
+}

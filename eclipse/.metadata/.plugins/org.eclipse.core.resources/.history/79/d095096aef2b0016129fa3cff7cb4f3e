@@ -1,0 +1,18 @@
+package ru.sarir.betterfood.proxy;
+
+public class ClientProxy extends CommonProxy {
+	public void preInit(FMLPreInitializationEvent preEvent) {
+		super.preInit(preEvent);
+	}
+
+	public void init(FMLInitializationEvent event) {
+		super.init(event);
+		
+		SBlockRender.registerBlockRender();
+		SItemRender.registerItemRender();
+	}
+
+	public void postInit(FMLPostInitializationEvent postEvent) {
+		super.postInit(postEvent);
+	}
+}

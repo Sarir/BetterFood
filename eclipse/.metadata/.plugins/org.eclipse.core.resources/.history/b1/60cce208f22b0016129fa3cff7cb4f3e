@@ -1,0 +1,8 @@
+package ru.sarir.betterfood.items.recipes;
+
+public class Snippet {
+	public static void main(String[] args) {
+		BetterFood
+	}
+}
+

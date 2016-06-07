@@ -1,0 +1,8 @@
+package ru.sarir.betterfood.items;
+
+public class BFItemRender {
+
+	public static void registerItemRender() {
+		
+	}
+}

@@ -1,0 +1,53 @@
+package ru.sarir.betterfood.fluids;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidContainerRegistry;
+import net.minecraftforge.fluids.FluidContainerRegistry.FluidContainerRegisterEvent;
+import net.minecraftforge.fluids.FluidRegistry;
+import net.minecraftforge.fluids.FluidStack;
+import ru.sarir.betterfood.BetterFood;
+import ru.sarir.betterfood.fluids.blocks.FluidMayo;
+import ru.sarir.betterfood.fluids.blocks.FluidSunflowerOil;
+import ru.sarir.betterfood.items.BFItems;
+
+public class BFFluids {
+
+	public static Fluid fluidMayo;
+	public static Fluid fluidSunflowerOil;
+	
+	public static Block mayo;
+	public static Block sunflowerOil;
+	
+	public static void initFluids() {
+		fluidMayo = new Fluid("fluidMayo").setLuminosity(0).setViscosity(20000).setGaseous(false);
+		fluidSunflowerOil = new Fluid("fluidSunflowerOil").setLuminosity(0).setViscosity(5500).setGaseous(false);
+		
+		FluidRegistry.registerFluid(fluidMayo);
+		FluidRegistry.registerFluid(fluidSunflowerOil);
+		
+		/*
+		mayo = new FluidMayo(fluidMayo, Material.water); 
+		sunflowerOil = new FluidSunflowerOil(fluidSunflowerOil, Material.water);
+		*/
+		
+		mayo = new BFFluidBlock("mayo", fluidMayo);
+		sunflowerOil = new BFFluidBlock("sunflowerOil", fluidSunflowerOil);
+		
+		GameRegistry.registerBlock(mayo, "blockMayo");
+		GameRegistry.registerBlock(sunflowerOil, "blockSunflowerOil");
+		
+		fluidMayo.setBlock(mayo);
+		fluidSunflowerOil.setBlock(sunflowerOil);
+		
+		fluidMayo.setUnlocalizedName(mayo.getUnlocalizedName());
+		fluidSunflowerOil.setUnlocalizedName(sunflowerOil.getUnlocalizedName());
+		
+		FluidContainerRegistry.registerFluidContainer(new FluidStack(fluidSunflowerOil, 250), new ItemStack(BFItems.sunflowerOil), new ItemStack(Items.glass_bottle));
+		FluidContainerRegistry.registerFluidContainer(new FluidStack(fluidMayo, 250), new ItemStack(BFItems.mayoPotion), new ItemStack(Items.glass_bottle));
+	}
+}

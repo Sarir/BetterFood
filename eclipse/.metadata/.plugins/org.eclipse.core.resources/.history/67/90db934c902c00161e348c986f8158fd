@@ -1,0 +1,22 @@
+package ru.sarir.betterfood.handlers;
+
+import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import ic2.core.init.BlocksItems;
+import ic2.core.init.InternalName;
+import net.minecraft.block.Block;
+import net.minecraftforge.client.event.TextureStitchEvent;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidEvent.FluidSpilledEvent;
+import net.minecraftforge.fluids.FluidRegistry;
+import ru.sarir.betterfood.fluids.BFFluids;
+
+public class HookTexture {
+	@SubscribeEvent
+	@SideOnly(Side.CLIENT)
+	public void textureHook(TextureStitchEvent.Post event) {
+		BFFluids.fluidMayo.setIcons(BFFluids.mayo.getBlockTextureFromSide(1), BFFluids.mayo.getBlockTextureFromSide(2));
+		BFFluids.fluidSunflowerOil.setIcons(BFFluids.sunflowerOil.getBlockTextureFromSide(1), BFFluids.sunflowerOil.getBlockTextureFromSide(2));
+	}
+}

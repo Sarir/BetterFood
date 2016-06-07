@@ -1,0 +1,10 @@
+package ru.sarir.betterfood.items;
+
+public class BFItems {
+
+	private static Item registerItem(String name) {
+		Item item = new SItem(name);
+		GameRegistry.registerItem(item, name);
+		return item;
+	}
+}

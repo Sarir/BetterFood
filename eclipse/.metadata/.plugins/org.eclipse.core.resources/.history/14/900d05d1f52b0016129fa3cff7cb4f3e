@@ -1,0 +1,12 @@
+package ru.sarir.betterfood.items;
+
+public class BFItemKnife extends Item {
+	public SIronTools(String unlocalizedName, int uses) {
+		super();
+		this.setUnlocalizedName(unlocalizedName);
+		this.maxStackSize = 1;
+		this.setMaxDamage(uses);
+		this.setNoRepair();
+		this.setCreativeTab(SGlobal.sCreativeTab);
+	}
+}

@@ -1,0 +1,80 @@
+tile.copperOre.name=Copper Ore
+tile.tinOre.name=Tin Ore
+
+tile.topazOre.name=Topaz Ore
+tile.rubyOre.name=Ruby Ore
+tile.amethystOre.name=Amethyst Ore
+
+tile.copperBlock.name=Copper Block
+tile.tinBlock.name=Tin Block
+tile.bronzeBlock.name=Bronze Block
+
+tile.topazBlock.name=Topaz Block
+tile.rubyBlock.name=Ruby Block
+tile.amethystBlock.name=Amethyst Block
+
+item.copperIngot.name=Copper Ingot
+item.tinIngot.name=Tin Ingot
+item.bronzeIngot.name=Bronze Ingot
+
+item.topaz.name=Topaz
+item.ruby.name=Ruby
+item.amethyst.name=Amethyst
+
+item.shaleMattock.name=Shale Mattock
+item.pitchHarvester.name=Pitch Harvester
+
+item.ironHammer.name=Iron Hammer
+
+item.bronzeSword.name=Bronze Sword
+item.bronzePickaxe.name=Bronze Pickaxe
+item.bronzeSpade.name=Bronze Shovel
+item.bronzeAxe.name=Bronze Axe
+item.bronzeHoe.name=Bronze Hoe
+
+item.amethystSword.name=Amethyst Sword
+item.amethystPickaxe.name=Amethyst Pickaxe
+item.amethystSpade.name=Amethyst Shovel
+item.amethystAxe.name=Amethyst Axe
+item.amethystHoe.name=Amethyst Hoe
+
+item.rubySword.name=Ruby Sword
+item.rubyPickaxe.name=Ruby Pickaxe
+item.rubySpade.name=Ruby Shovel
+item.rubyAxe.name=Ruby Axe
+item.rubyHoe.name=Ruby Hoe
+
+item.topazSword.name=Topaz Sword
+item.topazPickaxe.name=Topaz Pickaxe
+item.topazSpade.name=Topaz Shovel
+item.topazAxe.name=Topaz Axe
+item.topazHoe.name=Topaz Hoe
+
+item.bronzeHelm.name=Bronze Helmet
+item.bronzeChestplate.name=Bronze Chestplate
+item.bronzeLeggings.name=Bronze Leggings
+item.bronzeBoots.name=Bronze Boots
+
+item.amethystHelm.name=Amethyst Helmet
+item.amethystChestplate.name=Amethyst Chestplate
+item.amethystLeggings.name=Amethyst Leggings
+item.amethystBoots.name=Amethyst Boots
+
+item.rubyHelm.name=Ruby Helmet
+item.rubyChestplate.name=Ruby Chestplate
+item.rubyLeggings.name=Ruby Leggings
+item.rubyBoots.name=Ruby Boots
+
+item.topazHelm.name=Topaz Helmet
+item.topazChestplate.name=Topaz Chestplate
+item.topazLeggings.name=Topaz Leggings
+item.topazBoots.name=Topaz Boots
+
+item.treePitch.name=Tree Pitch
+item.stickyGel.name=Sticky Gel
+
+item.chickenShit.name=Chicken Shit
+
+item.ironPlate.name=Iron Plate
+
+itemGroup.sCreativeTab=Sarir's Mod

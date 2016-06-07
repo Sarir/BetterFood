@@ -1,0 +1,9 @@
+package ru.sarir.betterfood.items;
+
+public class Burger extends BFItemFood {
+
+	public Burger() {
+		super("burger", 19, 0.19f, true);
+	}
+
+}

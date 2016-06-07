@@ -1,0 +1,5 @@
+package ru.sarir.betterfood.items;
+
+public class Burger {
+
+}

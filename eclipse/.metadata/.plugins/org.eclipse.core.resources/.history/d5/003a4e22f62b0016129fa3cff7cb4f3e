@@ -1,0 +1,22 @@
+package ru.sarir.betterfood.items.recipes;
+
+import cpw.mods.fml.common.registry.GameRegistry;
+import ic2.api.recipe.RecipeInputItemStack;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import ru.sarir.betterfood.items.BFItems;
+
+public class Recipes {
+	
+	public static void initRecipes() {
+		// Sunflower seeds
+		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.double_plant, 1, 0), new Object[] {BFItems.sunflowerSeeds, 15});
+		
+		// Sunflower oil
+		ic2.api.recipe.Recipes.compressor.addRecipe(new RecipeInputItemStack(new ItemStack(BFItems.sunflowerSeeds), 50), null, new ItemStack(BFItems.sunflowerOil));
+		
+		// Mayo
+		GameRegistry.addShapedRecipe(new ItemStack(BFItems.mayo), new Object[] {"EEE", "SMO", "", 'E', Items.egg, 'S', Items.sugar, 'M', Items.milk_bucket, 'O', BFItems.sunflowerOil});
+	}
+}

@@ -1,0 +1,18 @@
+package ru.sarir.betterfood;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+
+@Mod(modid = BetterFood.MODID, version = BetterFood.VERSION, name = BetterFood.NAME)
+public class BetterFood {
+	public static final String MODID = "bf";
+	public static final String VERSION = "1.0";
+	public static final String NAME = "Better Food";
+
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+		
+		
+	}
+}

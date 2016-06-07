@@ -1,0 +1,29 @@
+package ru.sarir.betterfood.proxy;
+
+public class CommonProxy {
+	
+	public void preInit(FMLPreInitializationEvent preEvent) {
+		
+		//SRecipeRemover.removeCrafting(Items.book);
+		
+		SBlocks.initBlocks();
+		SItems.initItems();
+		
+		SRecipes.initRecipes();
+		SSmelting.initSmelting();
+	}
+
+	public void init(FMLInitializationEvent event) {
+		MinecraftForge.EVENT_BUS.register(new SDropHandler());
+		
+		GameRegistry.registerFuelHandler(new SFuelhandler());
+		
+		GameRegistry.registerWorldGenerator(new SWorldGen(), 0);
+		
+		MinecraftForge.EVENT_BUS.register(new SCraftingHandler());
+	}
+
+	public void postInit(FMLPostInitializationEvent postEvent) {
+
+	}
+}

@@ -1,0 +1,10 @@
+itemGroup.CreativeTab=Better Food
+
+item.knife.name=Knife
+item.sunflowerSeeds.name=Sunflower Seeds
+item.burger.name=Burger
+item.sunflowerOil.name=Sunflower Oil
+item.mayoPotion.name=Mayonnaise
+
+tile.blockMayo.name=Mayonnaise
+tile.blockSunflowerOil.name=Sunflower Oil

@@ -1,0 +1,17 @@
+package ru.sarir.betterfood.items;
+
+import net.minecraft.item.Item;
+
+public class BFItem extends Item {
+
+	public class SItem extends Item {
+
+		public SItem(String name) {
+			super();
+			
+			this.setUnlocalizedName(name);
+			this.setCreativeTab(SGlobal.sCreativeTab);
+		}
+		
+	}
+}

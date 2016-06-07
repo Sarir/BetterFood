@@ -1,0 +1,34 @@
+package ru.sarir.betterfood;
+
+import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
+import cpw.mods.fml.common.Mod.Instance;
+import cpw.mods.fml.common.SidedProxy;
+import cpw.mods.fml.common.event.FMLInitializationEvent;
+import cpw.mods.fml.common.event.FMLPostInitializationEvent;
+import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import ru.sarir.betterfood.proxy.CommonProxy;
+
+@Mod(modid = Globals.MODID, version = BetterFood.VERSION, name = BetterFood.NAME, dependencies = "required-after:IC2")
+public class BetterFood {
+	@Instance(MODID)
+	public static BetterFood instance;
+	
+	@SidedProxy(clientSide = CLIENT_PROXY, serverSide = SERVER_PROXY)
+	public static CommonProxy proxy;
+	
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent preEvent) {
+		this.proxy.preInit(preEvent);
+	}
+	
+	@EventHandler
+	public void init(FMLInitializationEvent event) {
+		this.proxy.init(event);
+	}
+	
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent postEvent) {
+		this.proxy.postInit(postEvent);
+	}
+}

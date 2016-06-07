@@ -1,0 +1,17 @@
+package ru.sarir.betterfood.items;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.item.Item;
+import ru.sarir.betterfood.BetterFood;
+
+public class BFItemRender {
+
+	public static void registerItemRender() {
+		
+	}
+	
+	public static void regItem(Item item) {
+		//Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0,
+			//	new ModelResourceLocation(BetterFood.MODID + ":" + item.getUnlocalizedName().substring(5), "inventory"));
+	}
+}

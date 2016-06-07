@@ -1,0 +1,5 @@
+package ru.sarir.betterfood.handlers;
+
+public class HookTexture {
+
+}
