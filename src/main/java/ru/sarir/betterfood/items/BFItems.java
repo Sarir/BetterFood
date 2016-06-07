@@ -1,6 +1,9 @@
 package ru.sarir.betterfood.items;
 
 import cpw.mods.fml.common.registry.GameRegistry;
+import forestry.api.circuits.ChipsetManager;
+import forestry.api.multiblock.MultiblockManager;
+import forestry.api.recipes.RecipeManagers;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemFood;
 

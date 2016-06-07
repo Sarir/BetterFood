@@ -1,0 +1,113 @@
+---- Minecraft Crash Report ----
+// There are four lights!
+
+Time: 07.06.16 21:19
+Description: Unexpected error
+
+java.lang.NullPointerException: Unexpected error
+	at ic2.api.crops.CropCard.getSprite(CropCard.java:175)
+	at ic2.core.crop.BlockCrop.getIcon(BlockCrop.java:117)
+	at net.minecraft.client.renderer.RenderBlocks.getBlockIcon(RenderBlocks.java:8446)
+	at ic2.core.block.RenderBlockCrop.renderWorldBlock(RenderBlockCrop.java:83)
+	at cpw.mods.fml.client.registry.RenderingRegistry.renderWorldBlock(RenderingRegistry.java:118)
+	at net.minecraft.src.FMLRenderAccessLibrary.renderWorldBlock(FMLRenderAccessLibrary.java:53)
+	at net.minecraft.client.renderer.RenderBlocks.renderBlockByRenderType(RenderBlocks.java:389)
+	at net.minecraft.client.renderer.WorldRenderer.updateRenderer(WorldRenderer.java:207)
+	at net.minecraft.client.renderer.RenderGlobal.updateRenderers(RenderGlobal.java:1618)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1263)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1091)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at ic2.api.crops.CropCard.getSprite(CropCard.java:175)
+	at ic2.core.crop.BlockCrop.getIcon(BlockCrop.java:117)
+	at net.minecraft.client.renderer.RenderBlocks.getBlockIcon(RenderBlocks.java:8446)
+	at ic2.core.block.RenderBlockCrop.renderWorldBlock(RenderBlockCrop.java:83)
+	at cpw.mods.fml.client.registry.RenderingRegistry.renderWorldBlock(RenderingRegistry.java:118)
+	at net.minecraft.src.FMLRenderAccessLibrary.renderWorldBlock(FMLRenderAccessLibrary.java:53)
+	at net.minecraft.client.renderer.RenderBlocks.renderBlockByRenderType(RenderBlocks.java:389)
+	at net.minecraft.client.renderer.WorldRenderer.updateRenderer(WorldRenderer.java:207)
+	at net.minecraft.client.renderer.RenderGlobal.updateRenderers(RenderGlobal.java:1618)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1263)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player921'/229, l='MpServer', x=727,47, y=5,62, z=-144,88]]
+	Chunk stats: MultiplayerChunkCache: 30, 30
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (722,4,-160), Chunk: (at 2,0,0 in 45,-10; contains blocks 720,0,-160 to 735,255,-145), Region: (1,-1; contains chunks 32,-32 to 63,-1, blocks 512,0,-512 to 1023,255,-1)
+	Level time: 108837 game time, 3500 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+	Forced entities: 16 total; [EntityClientPlayerMP['Player921'/229, l='MpServer', x=727,47, y=5,62, z=-144,88], EntityBat['Bat'/80, l='MpServer', x=705,66, y=4,89, z=-144,09], EntityChicken['Chicken'/145, l='MpServer', x=723,41, y=4,00, z=-99,44], EntityBat['Bat'/86, l='MpServer', x=691,50, y=6,89, z=-109,56], EntityPig['Pig'/153, l='MpServer', x=734,78, y=4,00, z=-190,88], EntityChicken['Chicken'/154, l='MpServer', x=746,53, y=4,00, z=-112,38], EntityChicken['Chicken'/157, l='MpServer', x=738,56, y=4,00, z=-105,44], EntityChicken['Chicken'/158, l='MpServer', x=740,59, y=4,00, z=-98,47], EntityChicken['Chicken'/159, l='MpServer', x=742,53, y=4,00, z=-112,47], EntityChicken['Chicken'/108, l='MpServer', x=689,63, y=0,77, z=-207,44], EntityPig['Pig'/110, l='MpServer', x=689,75, y=4,00, z=-133,13], EntityPig['Pig'/113, l='MpServer', x=691,22, y=4,00, z=-110,63], EntityCow['Cow'/114, l='MpServer', x=690,81, y=4,00, z=-100,22], EntityBat['Bat'/116023, l='MpServer', x=685,10, y=8,28, z=-202,53], EntityCow['Cow'/122, l='MpServer', x=709,84, y=4,00, z=-137,88], EntityPig['Pig'/124, l='MpServer', x=700,03, y=4,00, z=-104,97]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:991)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_91, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 301827248 bytes (287 MB) / 519438336 bytes (495 MB) up to 519438336 bytes (495 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx512M -Xms512M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1566 6 mods loaded, 6 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1566} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1566-1.7.10.jar) 
+	UCHIJAAAA	IC2{2.2.822-experimental} [IndustrialCraft 2] (ic2e_822_dev.jar) 
+	UCHIJAAAA	Forestry{4.2.12.60} [Forestry for Minecraft] (forestry_60_dev.jar) 
+	UCHIJAAAA	betterfood{1.0} [Better Food] (bin) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 364.72' Renderer: 'GeForce GT 730/PCIe/SSE2'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GT 730/PCIe/SSE2 GL version 4.5.0 NVIDIA 364.72, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)
