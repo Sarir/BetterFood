@@ -11,6 +11,7 @@ public class BFItems {
 	
 	public static Item sunflowerOil; 
 	public static Item mayoPotion;
+	public static Item milkPotion;
 	
 	public static BFItemKnife knife;
 	
@@ -20,6 +21,7 @@ public class BFItems {
 		
 		sunflowerOil = registerItem("sunflowerOil");
 		mayoPotion = registerItem("mayoPotion");
+		milkPotion = registerItem("milkPotion");
 		
 		knife = new BFItemKnife();
 	}

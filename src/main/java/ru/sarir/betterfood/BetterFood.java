@@ -9,7 +9,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import ru.sarir.betterfood.proxy.CommonProxy;
 
-@Mod(modid = Globals.MODID, version = Globals.VERSION, name = Globals.NAME, dependencies = "required-after:IC2")
+@Mod(modid = Globals.MODID, version = Globals.VERSION, name = Globals.NAME, dependencies = "required-after:IC2;after:Forestry")
 public class BetterFood {
 	
 	@Instance(Globals.MODID)

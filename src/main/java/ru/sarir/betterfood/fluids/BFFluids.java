@@ -1,6 +1,8 @@
 package ru.sarir.betterfood.fluids;
 
+import forestry.core.fluids.Fluids;
 import net.minecraft.block.Block;
+import net.minecraft.client.Minecraft;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fluids.Fluid;
@@ -25,5 +27,6 @@ public class BFFluids {
 		
 		FluidContainerRegistry.registerFluidContainer(new FluidStack(fluidSunflowerOil, 250), new ItemStack(BFItems.sunflowerOil), new ItemStack(Items.glass_bottle));
 		FluidContainerRegistry.registerFluidContainer(new FluidStack(fluidMayo, 250), new ItemStack(BFItems.mayoPotion), new ItemStack(Items.glass_bottle));
+		FluidContainerRegistry.registerFluidContainer(new FluidStack(Fluids.MILK.getFluid(), 250), new ItemStack(BFItems.milkPotion), new ItemStack(Items.glass_bottle));
 	}
 }
